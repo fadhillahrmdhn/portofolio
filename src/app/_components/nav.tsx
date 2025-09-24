@@ -20,7 +20,7 @@ const socialItems = [
 export function Nav() {
   return (
     // Mengganti inline style dengan kelas utilitas Tailwind CSS untuk konsistensi.
-    <div className="h-screen w-screen fixed top-0 left-0 z-50 ">
+    <div className="h-screen w-screen fixed top-0 left-0 z-50">
       <StaggeredMenu
         position="right"
         items={menuItems}
@@ -28,11 +28,11 @@ export function Nav() {
         displaySocials={true}
         displayItemNumbering={true}
         menuButtonColor="#fff"
-        openMenuButtonColor="#fff"
+        openMenuButtonColor="#000"
         changeMenuColorOnOpen={true}
         colors={['#B19EEF', '#5227FF']}
         logoUrl="/path-to-your-logo.svg"
-        accentColor="#ff6b6b"
+        accentColor="#0691FF"
         onMenuOpen={() => console.log('Menu opened')}
         onMenuClose={() => console.log('Menu closed')}
       />
