@@ -17,7 +17,7 @@ const socialItems = [
   { label: 'LinkedIn', link: 'https://linkedin.com' },
 ];
 
-export function Nav() {
+export function Navbar() {
   return (
     // Mengganti inline style dengan kelas utilitas Tailwind CSS untuk konsistensi.
     <div className="h-screen w-screen fixed top-0 left-0 z-50">
