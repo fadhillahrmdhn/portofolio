@@ -1,10 +1,11 @@
-import { Hero, About } from './_components';
+import { Hero, About, Project } from './_components';
 
 export default function Home() {
   return (
-    <main className="snap-y snap-mandatory overflow-y-scroll h-screen scroll-smooth">
+    <main className="snap-y snap-mandatory overflow-y-scroll h-screen">
       <Hero />
       <About />
+      <Project />
     </main>
   );
 }
