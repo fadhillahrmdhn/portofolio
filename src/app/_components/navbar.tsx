@@ -8,7 +8,7 @@ const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
   { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
   { label: 'Projects', ariaLabel: 'View our projects', link: '/projects' },
-  { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' },
+  { label: 'Experience', ariaLabel: 'Get in touch', link: '/experience' },
 ];
 
 const socialItems = [
