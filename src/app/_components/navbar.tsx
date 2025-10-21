@@ -7,7 +7,7 @@ import StaggeredMenu from '@/components/StaggeredMenu';
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
   { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
-  { label: 'Projects', ariaLabel: 'View our projects', link: '/projects' }, 
+  { label: 'Projects', ariaLabel: 'View our projects', link: '/projects' },
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' },
 ];
 
@@ -20,7 +20,7 @@ const socialItems = [
 export function Navbar() {
   return (
     // Mengganti inline style dengan kelas utilitas Tailwind CSS untuk konsistensi.
-    <div className="h-screen w-screen fixed top-0 left-0 z-50">
+    <div className="h-screen w-screen fixed top-0 left-0 z-50 pointer-events-none">
       <StaggeredMenu
         position="right"
         items={menuItems}
