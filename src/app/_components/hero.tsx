@@ -1,7 +1,7 @@
 import React from 'react';
 import GradientText from '@/components/GradientText';
 
-export const Page1 = () => {
+export const Hero = () => {
   return (
     <section className="h-screen snap-start flex flex-col gap-6 items-center justify-center">
       <GradientText colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']} animationSpeed={3} showBorder={false} className="custom-class text-4xl sm:text-5xl md:text-6xl  px-6">
