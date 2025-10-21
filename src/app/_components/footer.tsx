@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const Rafce = () => {
-  return (
-    <footer className="bg-white dark:bg-gray-900">
+export const Footer = () => {
+  return ( 
+    <section className="h-screen snap-start flex flex-col justify-center items-center bg-gradient-to-b from-black via-slate-900 to-[#2D425C]">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -114,6 +114,6 @@ export const Rafce = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };

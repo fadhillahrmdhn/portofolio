@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#2D425C]`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#2D425C] overflow-y-hidden`}>
         <ClickSparkProvider>
           <Navbar />
           {children}
