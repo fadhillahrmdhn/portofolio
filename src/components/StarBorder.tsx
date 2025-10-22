@@ -7,17 +7,11 @@ type StarBorderProps<T extends React.ElementType> = React.ComponentPropsWithoutR
   color?: string;
   speed?: React.CSSProperties['animationDuration'];
   thickness?: number;
+  paddingX?: string;
+  paddingY?: string;
 };
 
-const StarBorder = <T extends React.ElementType = 'button'>({
-  as,
-  className = '',
-  color = 'white',
-  speed = '6s',
-  thickness = 1,
-  children,
-  ...rest
-}: StarBorderProps<T>) => {
+const StarBorder = <T extends React.ElementType = 'button'>({ as, className = '', color = 'white', speed = '6s', thickness = 1, paddingX = '16px', paddingY = '8px', children, ...rest }: StarBorderProps<T>) => {
   const Component = as || 'button';
 
   return (
@@ -26,24 +20,24 @@ const StarBorder = <T extends React.ElementType = 'button'>({
       {...(rest as any)}
       style={{
         padding: `${thickness}px 0`,
-        ...(rest as any).style
+        ...(rest as any).style,
       }}
     >
       <div
         className="absolute w-[300%] h-[50%] opacity-70 bottom-[-11px] right-[-250%] rounded-full animate-star-movement-bottom z-0"
         style={{
           background: `radial-gradient(circle, ${color}, transparent 10%)`,
-          animationDuration: speed
+          animationDuration: speed,
         }}
       ></div>
       <div
         className="absolute w-[300%] h-[50%] opacity-70 top-[-10px] left-[-250%] rounded-full animate-star-movement-top z-0"
         style={{
           background: `radial-gradient(circle, ${color}, transparent 10%)`,
-          animationDuration: speed
+          animationDuration: speed,
         }}
       ></div>
-      <div className="relative z-1 bg-gradient-to-b from-black to-gray-900 border border-gray-800 text-white text-center text-[16px] py-[10px] rounded-[20px]">
+      <div className="relative z-1 bg-gradient-to-b from-black to-gray-900 border border-gray-800 text-white text-center text-[16px] rounded-[20px]" style={{ padding: `${paddingY} ${paddingX}` }}>
         {children}
       </div>
     </Component>
