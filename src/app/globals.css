@@ -166,4 +166,17 @@
   .animate-star-movement-top {
     animation: star-movement-top linear infinite alternate;
   }
+
+  @keyframes shine {
+    from {
+      background-position: 100%;
+    }
+    to {
+      background-position: -100%;
+    }
+  }
+
+  .animate-shine {
+    animation: shine 5s linear infinite;
+  }
 }

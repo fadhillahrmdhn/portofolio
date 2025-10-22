@@ -1,5 +1,6 @@
 import React from 'react';
 import GradientText from '@/components/GradientText';
+import ShinyText from '@/components/ShinyText';
 
 export const Hero = () => {
   return (
@@ -7,9 +8,9 @@ export const Hero = () => {
       <GradientText colors={['#40ffaa', '#4079ff', '#40ffaa', '#4079ff', '#40ffaa']} animationSpeed={3} showBorder={false} className="custom-class text-4xl sm:text-5xl md:text-6xl  px-6">
         Hei, I'm a Fadhillah Ramadhan
       </GradientText>
-      <p className="text-white text-center text-lg sm:text-xl max-w-3xl">
-        Passionate about building modern, responsive, and performant web experiences.
-      </p>
+      {/* <p className="text-white text-center text-lg sm:text-xl max-w-3xl">Passionate about building modern, responsive, and performant web experiences.</p> */}
+
+      <ShinyText text="Passionate about building modern, responsive, and performant web experiences." disabled={false} speed={3} className="custom-class" />
     </section>
   );
 };
