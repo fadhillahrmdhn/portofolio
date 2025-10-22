@@ -16,11 +16,11 @@ export const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
         viewport={{ once: false }}
-        className="max-w-4xl mx-auto px-4 text-center text-white text-base sm:text-lg md:text-xl leading-relaxed grid grid-cols-2 gap-6"
+        className=" mx-auto px-4 text-center text-white text-base sm:text-lg md:text-xl leading-relaxed grid grid-cols-2 gap-28 mt-10"
       >
-        <div>
+        <div className='max-w-md mx-auto'>
           <h3 className="text-2xl font-bold mb-4">Get to know me!</h3>
-          <p className="mt-4">
+          <p className="mt-4 text-justify">
             I'm a passionate frontend developer with a strong focus on creating user-friendly and visually appealing web applications. I strive to build responsive and dynamic interfaces that enhance user experience. I'm always eager to
             learn new technologies and improve my skills. I also enjoy working with teams and always strive to make meaningful contributions to every project I work on.
           </p>
@@ -29,8 +29,8 @@ export const About = () => {
         <div>
           <h3 className="text-2xl font-bold mb-4">My Skills</h3>
           <div className="grid grid-cols-4 gap-2">
-            {mySkillsMock.map((skill) => (
-              <StarBorder as="button" className="custom-class" color="cyan" speed="5s">
+            {mySkillsMock.map((skill, index) => (
+              <StarBorder key={index} as="button" className="custom-class " color="cyan" speed="5s">
                   {skill}
               </StarBorder>
             ))}
