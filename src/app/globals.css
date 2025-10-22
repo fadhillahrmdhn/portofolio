@@ -136,4 +136,34 @@
   .animate-gradient {
     animation: gradient 8s linear infinite;
   }
+
+  @keyframes star-movement-bottom {
+    from {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+    to {
+      transform: translate(-100%, 0%);
+      opacity: 0;
+    }
+  }
+
+  .animate-star-movement-bottom {
+    animation: star-movement-bottom linear infinite alternate;
+  }
+
+  @keyframes star-movement-top {
+    from {
+      transform: translate(0%, 0%);
+      opacity: 1;
+    }
+    to {
+      transform: translate(100%, 0%);
+      opacity: 0;
+    }
+  }
+
+  .animate-star-movement-top {
+    animation: star-movement-top linear infinite alternate;
+  }
 }
