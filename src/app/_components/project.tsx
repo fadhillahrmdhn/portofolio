@@ -4,16 +4,23 @@ import { motion } from 'framer-motion';
 
 export const Project = () => {
   return (
-    <section className="h-screen snap-start flex flex-col gap-4 w-full bg-gradient-to-b from-black via-slate-900 to-[#2D425C] pt-10 pb-20">
-      <motion.h2
+    <section className="h-screen snap-start flex flex-col gap-4 w-full bg-gradient-to-b from-[#2D425C] via-slate-900 to-black pt-10 pb-20">
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{ once: false }} className="max-w-4xl mx-auto px-4 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl text-cyan-400 font-bold mb-4 font-mono tracking-wide">My Projects</h2>
+        <hr className="mx-auto mb-4 h-1 w-24 rounded-full border-0 bg-gradient-to-r from-green-400 via-cyan-500 to-blue-500" />
+
+        <p className="mx-auto text-center max-w-4xl text-slate-100 text-base sm:text-lg  leading-relaxed">
+          Here are some of the projects I've worked on recently. Each project has a description, technologies used, and a link to the live demo.I'm excited to share them with you.
+        </p>
+      </motion.div>
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
         viewport={{ once: false }}
-        className="mx-auto text-center text-2xl sm:text-3xl md:text-4xl text-white font-bold mt-14 mb-4"
       >
-        My Projects
-      </motion.h2>
+
+      </motion.div>
     </section>
   )
 }

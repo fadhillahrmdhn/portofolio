@@ -11,7 +11,7 @@ export const About = () => {
         <h2 className="text-3xl sm:text-4xl md:text-5xl text-cyan-400 font-bold mb-4 font-mono tracking-wide">About Me</h2>
         <hr className="mx-auto mb-4 h-1 w-24 rounded-full border-0 bg-gradient-to-r from-green-400 via-cyan-500 to-blue-500" />
 
-        <p className="mx-auto text-center max-w-3xl text-slate-100 text-base sm:text-lg  leading-relaxed">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+        <p className="mx-auto text-center max-w-3xl text-slate-100 text-base md:text-lg  leading-relaxed">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
