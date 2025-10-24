@@ -13,12 +13,12 @@ export const CarouselDemo = ()=> {
           <CarouselItem key={index}>
                 <div
                   key={index}
-                  className="grid md:grid-cols-2 max-w-5xl mx-auto px-4 my-10"
+                  className="grid md:grid-cols-2 max-w-5xl mx-auto px-4 my-10 cursor-grab active:cursor-grabbing"
                 >
                   <Image className="rounded-t-lg w-full h-auto object-contain" width={400} height={250} src={project.image} alt={project.title} />
                   <div className="flex flex-col max-w-md mt-7">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{project.title}</h5>
-                    <p className="mb-3 font-normal text-gray-400 text-justify">{project.description}</p>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight font-mono text-cyan-400">{project.title}</h5>
+                    <p className="mb-3 font-normal text-slate-100 text-justify">{project.description}</p>
                   </div>
                 </div>
           </CarouselItem>
