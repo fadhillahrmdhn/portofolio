@@ -6,12 +6,12 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export const CarouselDemo = ()=> {
   return (
+    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }}>
     <Carousel className="w-full max-w-xs mx-auto md:max-w-4xl lg:max-w-6xl">
       <CarouselContent>
       {projects.map((project, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
-                <motion.div
+                <div
                   key={index}
                   className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 my-10"
                 >
@@ -20,13 +20,13 @@ export const CarouselDemo = ()=> {
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-white">{project.title}</h5>
                     <p className="mb-3 font-normal text-gray-400 ">{project.description}</p>
                   </div>
-                </motion.div>
-            </div>
+                </div>
           </CarouselItem>
         ))}
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
+    </motion.div>
   );
 }
