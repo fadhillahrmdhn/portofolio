@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '@/app/data';
 import Image from 'next/image';
+import { CarouselDemo } from './carouselDemo';
 
 
 export const Project = () => {
@@ -17,7 +18,7 @@ export const Project = () => {
         </p>
       </motion.div>
 
-      {projects.map((project, index) => (      
+      {/* {projects.map((project, index) => (      
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }} key={index} className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 my-10">
         <Image className="rounded-t-lg w-full h-auto object-contain" width={400} height={250} src={project.image} alt={project.title} />
         <div className="flex flex-col justify-center">
@@ -25,7 +26,8 @@ export const Project = () => {
           <p className="mb-3 font-normal text-gray-400 ">{project.description}</p>
         </div>
       </motion.div>
-          ))}     
+          ))}      */}
+      <CarouselDemo />
            
     </section>
   );
