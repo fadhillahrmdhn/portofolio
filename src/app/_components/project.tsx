@@ -6,7 +6,7 @@ import { CarouselDemo } from './carouselDemo';
 
 export const Project = () => {
   return (
-    <section className="h-screen snap-start flex flex-col gap-4 w-full bg-gradient-to-b from-black via-slate-900 to-[#2D425C] pt-10 pb-20">
+    <section className="h-screen snap-start flex flex-col gap-3 w-full bg-gradient-to-b from-black via-slate-900 to-[#2D425C] pt-10 pb-20">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} viewport={{ once: false }} className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl text-cyan-400 font-bold mb-4 font-mono tracking-wide">Projects</h2>
         <hr className="mx-auto mb-4 h-1 w-24 rounded-full border-0 bg-gradient-to-r from-green-400 via-cyan-500 to-blue-500" />
