@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { projects } from '@/app/data';
 import Image from 'next/image';
+import { ButtonLiveDemo } from './buttonLiveDemo';
 import { Badge } from './badge';
 import { motion } from 'framer-motion';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
@@ -36,6 +37,7 @@ export const CarouselDemo = () => {
                       <Badge key={techIndex} tech={tech} />
                     ))}
                   </div>
+                  <ButtonLiveDemo link={project.link} />
                 </div>
               </div>
             </CarouselItem>
