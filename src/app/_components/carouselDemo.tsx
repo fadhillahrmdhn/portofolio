@@ -22,26 +22,26 @@ export const CarouselDemo = () => {
     });
   }, [api]);
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }} className='bg-white/10 rounded-xl w-5xl mx-auto shadow-xl'>
+    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }} className="bg-white/10 rounded-xl w-5xl mx-auto shadow-xl">
       <Carousel setApi={setApi} className="w-full max-w-xs mx-auto md:max-w-4xl lg:max-w-6xl">
         <CarouselContent>
           {projects.map((project, index) => (
             <CarouselItem key={index}>
               <div key={index} className="grid md:grid-cols-2 max-w-5xl mx-auto px-4 py-5 cursor-grab active:cursor-grabbing">
                 <Image className="rounded-t-lg w-full h-auto object-contain" width={400} height={250} src={project.image} alt={project.title} />
-                <div className="flex flex-col max-w-md justify-between pl-2">
+                <div className="flex flex-col max-w-md justify-between">
                   <div>
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight font-mono text-cyan-400">{project.title}</h5>
-                  <p className="mb-5 font-normal text-slate-100 text-justify">{project.description}</p>
-                  
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-3 mt-4">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight font-mono text-cyan-400">{project.title}</h5>
+                      <ButtonLiveDemo link={project.link} />
+                    </div>
+
+                    <p className="mb-5 font-normal text-slate-100 text-justify">{project.description}</p>
                   </div>
-                  <div>
-                    <ButtonLiveDemo link={project.link} />
-                  <div className="flex flex-wrap gap-2 mt-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <Badge key={techIndex} tech={tech} />
                     ))}
-                  </div>
                   </div>
                 </div>
               </div>
