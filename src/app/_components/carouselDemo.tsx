@@ -31,7 +31,7 @@ export const CarouselDemo = () => {
                 <div className="flex flex-col max-w-md mt-7">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight font-mono text-cyan-400">{project.title}</h5>
                   <p className="mb-3 font-normal text-slate-100 text-justify">{project.description}</p>
-                  <div className="mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, techIndex) => (
                       <Badge key={techIndex} tech={tech} />
                     ))}
