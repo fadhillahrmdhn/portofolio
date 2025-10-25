@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 export const ButtonLiveDemo = ({ link }: { link: string }) => {
   return (
@@ -6,9 +7,10 @@ export const ButtonLiveDemo = ({ link }: { link: string }) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300  shadow-lg shadow-cyan-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 font-mono "
+      className="inline-flex items-center gap-2 text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 shadow-lg shadow-cyan-500/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 font-mono"
     >
-     Visit site
+      Visit site
+      <ExternalLink className="size-4" />
     </a>
   );
 };
