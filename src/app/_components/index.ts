@@ -5,3 +5,4 @@ export * from './project';
 export * from './footer';
 export * from './experience';
 export * from './carouselDemo';
+export * from './badge';

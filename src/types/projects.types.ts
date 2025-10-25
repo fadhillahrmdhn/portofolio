@@ -3,6 +3,7 @@ export type Project = {
   image: string;
   description: string;
   link: string;
+  technologies: string[];
 };
 
 export type ProjectProps={

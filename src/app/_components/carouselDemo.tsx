@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { projects } from '@/app/data';
 import Image from 'next/image';
+import { Badge } from './badge';
 import { motion } from 'framer-motion';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from '@/components/ui/carousel';
 
@@ -30,6 +31,11 @@ export const CarouselDemo = () => {
                 <div className="flex flex-col max-w-md mt-7">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight font-mono text-cyan-400">{project.title}</h5>
                   <p className="mb-3 font-normal text-slate-100 text-justify">{project.description}</p>
+                  <div className="mb-4">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge key={techIndex} tech={tech} />
+                    ))}
+                  </div>
                 </div>
               </div>
             </CarouselItem>
