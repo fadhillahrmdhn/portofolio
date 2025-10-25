@@ -22,7 +22,7 @@ export const CarouselDemo = () => {
     });
   }, [api]);
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }} className='bg-white/10 rounded-lg w-5xl mx-auto'>
+    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }} className='bg-white/10 rounded-xl w-5xl mx-auto shadow-xl'>
       <Carousel setApi={setApi} className="w-full max-w-xs mx-auto md:max-w-4xl lg:max-w-6xl">
         <CarouselContent>
           {projects.map((project, index) => (
