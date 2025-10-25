@@ -142,7 +142,7 @@ function CarouselPrevious({ className, variant = 'outline', size = 'icon', ...pr
         // Menyesuaikan ukuran dan posisi
         'absolute size-10 rounded-full', // Mengubah size-8 menjadi size-10 untuk ukuran yang lebih besar
         orientation === 'horizontal'
-          ? 'top-1/2 -left-6 -translate-y-1/2' // Mengubah -left-12 menjadi -left-6 untuk mendekatkan tombol
+          ? 'top-1/2 left-3 -translate-y-1/2' // Mengubah -left-12 menjadi -left-6 untuk mendekatkan tombol
           : '-top-12 left-1/2 -translate-x-1/2 rotate-90', // Tidak ada perubahan untuk orientasi vertikal
         className
       )}
@@ -168,7 +168,7 @@ function CarouselNext({ className, variant = 'outline', size = 'icon', ...props 
         // Menyesuaikan ukuran dan posisi
         'absolute size-10 rounded-full', // Mengubah size-8 menjadi size-10 untuk ukuran yang lebih besar
         orientation === 'horizontal'
-          ? 'top-1/2 -right-6 -translate-y-1/2' // Mengubah -right-12 menjadi -right-6 untuk mendekatkan tombol
+          ? 'top-1/2 right-3 -translate-y-1/2' // Mengubah -right-12 menjadi -right-6 untuk mendekatkan tombol
           : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90', // Tidak ada perubahan untuk orientasi vertikal
         className
       )}

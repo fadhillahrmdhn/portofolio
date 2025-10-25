@@ -22,7 +22,7 @@ export const CarouselDemo = () => {
     });
   }, [api]);
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }}>
+    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} viewport={{ once: false }} className='bg-white/10 rounded-lg w-5xl mx-auto'>
       <Carousel setApi={setApi} className="w-full max-w-xs mx-auto md:max-w-4xl lg:max-w-6xl">
         <CarouselContent>
           {projects.map((project, index) => (
@@ -50,7 +50,7 @@ export const CarouselDemo = () => {
         <CarouselNext />
       </Carousel>
       <div className="flex justify-center">
-        <div className="inline-flex items-center justify-center rounded-full bg-slate-800/50 px-4 py-1.5 text-sm text-slate-300 backdrop-blur-sm">
+        <div className="inline-flex items-center justify-center rounded-full  px-4 py-1.5 text-sm text-slate-300 backdrop-blur-sm">
           <span className="font-bold text-cyan-400">{current}</span>
           <span className="mx-2">/</span>
           <span>{count}</span>
