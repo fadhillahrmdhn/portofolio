@@ -15,7 +15,6 @@ export const Project = () => {
           Here are some of the projects I've worked on recently. Each project has a description, technologies used, and a link to the live demo.I'm excited to share them with you.
         </p>
       </motion.div>
-
       <CarouselDemo />
            
     </section>
